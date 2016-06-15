@@ -194,17 +194,17 @@ There's one last thing you should know about `return`. Let's say we wanted both 
 ``` javascript
 function say(greeting, name) {
   return `${greeting}, ${name}!`
-  console.log(greeting, `, ${name}!`)
+  console.log('I was called!')
 }
 ```
 
-Then we can call it with `say("Howdy", "partner")` — but we only see `"Howdy, partner!"` in console, meaning that we only `return`-ed the value — it never got logged.
+Then we can call it with `say("Howdy", "partner")` — but we only see `"Howdy, partner!"` in the browser console, meaning that we only `return`-ed the value — we never logged "I was called!".
 
 This is because `return` **ends the execution inside the function**, meaning that if we return, nothing will happen after that. To both log and return like we want to, we can switch the order around:
 
 ``` javascript
 function say(greeting, name) {
-  console.log(greeting, `, ${name}!`)
+  console.log('I was called!')
   return `${greeting}, ${name}!`
 }
 ```
@@ -213,7 +213,7 @@ Now the function should work as expected: `say("Howdy", "partner")`.
 
 ## Your turn!
 
-Try rewriting some of the functions that we've written in this lesson to get used to the difference between `return`-ing and printing (`console.log()`-ing) to console. Try writing a function of your own that returns something. Maybe instead of logging `\`Hello, ${name}\``, we can return it?
+Try rewriting some of the functions that we've written in this lesson to get used to the difference between `return`-ing and printing (`console.log()`-ing) to console. Try writing a function of your own that returns something. Maybe instead of logging ``Hello, ${name}``, we can return it?
 
 ## Resources
 
