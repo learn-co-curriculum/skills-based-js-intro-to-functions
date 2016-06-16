@@ -137,11 +137,11 @@ sayHelloTo(1) // "Hello, 1!"
 // ^ Note that in the above, JavaScript coerces the number 1 to the string "1"
 ```
 
-That's pretty cool. Note that `name` is only available in the body of the function. If we just type `name` in the console, we'll get an error because it's undefined!
+That's pretty cool. We use what's called a _parameter_, in this case called "name." **Parameters** or **arguments** are objects (there's that word again!) that get passed to a function to use when it runs. They're essentially local variables that stick around for the life of the function. Note that `name` is only available in the body of the function. If we just type `name` in the console, we'll get an error because it's undefined!
 
 ### Saying something new
 
-What if we want to say something other than "Hello"? Well, we can move the greeting to a variable as well:
+What if we want to say something other than "Hello"? Well, we can move the greeting to a parameter as well:
 
 ``` javascript
 function say(greeting, name) {
