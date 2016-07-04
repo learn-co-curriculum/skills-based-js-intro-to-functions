@@ -37,7 +37,7 @@ Functions are ways of giving the JavaScript interpreter instructions that it can
 function doNothing() {}
 ```
 
-As you can see, when we declare a function, we start with the `function` keyword, followed by a name for the function (it's `doNothing` above), followed by a pair of parentheses. Then we have a pair of curly braces. The above function, as it's name implies, doesn't do much. Copy the function into your browser's console and then run it by typing the function name followed by two parentheses: `doNothing()`.
+As you can see, when we declare a function, we start with the `function` keyword, followed by a name for the function (it's `doNothing` above), followed by a pair of parentheses. Then we have a pair of curly braces. The above function, as its name implies, doesn't do much. Copy the function into your browser's console and then run it by typing the function name followed by two parentheses: `doNothing()`.
 
 ...
 
@@ -218,3 +218,5 @@ Try rewriting some of the functions that we've written in this lesson to get use
 ## Resources
 
 - [MDN - Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/skills-based-js-intro-to-functions'>Intro to Functions</a> on Learn.co and start learning to code for free.</p>
