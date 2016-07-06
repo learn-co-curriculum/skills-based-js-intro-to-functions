@@ -1,11 +1,10 @@
-Introduction to Functions in JavaScript
----
+# Introduction to Functions in JavaScript
 
 ## Objectives
 
-- Explain what a function is in JavaScript
-- Write a function from scratch
-- Explain what a return value is in JavaScript
+1. Explain what a function is in JavaScript
+2. Write a function from scratch
+3. Explain what a return value is in JavaScript
 
 ## JavaScript Function, what's your... um... function?
 
