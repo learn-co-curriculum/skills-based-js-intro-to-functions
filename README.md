@@ -182,7 +182,7 @@ function say(greeting, name) {
 
 (Note that we've used a template literal, which we learned about previously, in order to make our string easier to read.)
 
-Now when call `say("Hello", "Sofia")` we'll see `"Hello, Sofia!"` instead of `Hello, Sofia` and then `undefined` in the browser's console.
+Now when we call `say("Hello", "Sofia")` we'll see `"Hello, Sofia!"` instead of `Hello, Sofia` and then `undefined` in the browser's console.
 
 What's happening here? These differences seem _awfully_ subtle. Well, while we're working in the console, they _are_ subtle. The console tells us that when we `return \`${greeting}, ${name}\``, we're returning a string by wrapping it in `"`; but when we just call `console.log("Hello", "Chuck!")`, we instead see only `Hello, Chuck!` (without quotes), followed by `undefined`.
 
