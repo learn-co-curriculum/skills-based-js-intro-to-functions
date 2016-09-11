@@ -172,7 +172,7 @@ function add(x, y) {
 
 Now try `add(1, 2)` in console. See that? We got `3` back! What if we try `add(80, 9000)`? Whoa! We got 9080!
 
-When we return inside a function, we're giving that value back to the world outside the function. Let's try a something a little different: let's rewrite our `say()` function from above so that now instead of `console.log()`-ing what it says, it returns it.
+When we return inside a function, we're giving that value back to the world outside the function. Let's try something a little different: let's rewrite our `say()` function from above so that now instead of `console.log()`-ing what it says, it returns it.
 
 ``` javascript
 function say(greeting, name) {
@@ -184,7 +184,7 @@ function say(greeting, name) {
 
 Now when we call `say("Hello", "Sofia")` we'll see `"Hello, Sofia!"` instead of `Hello, Sofia` and then `undefined` in the browser's console.
 
-What's happening here? These differences seem _awfully_ subtle. Well, while we're working in the console, they _are_ subtle. The console tells us that when we `return \`${greeting}, ${name}\``, we're returning a string by wrapping it in `"`; but when we just call `console.log("Hello", "Chuck!")`, we instead see only `Hello, Chuck!` (without quotes), followed by `undefined`.
+What's happening here? These differences seem _awfully_ subtle. Well, while we're working in the console, they _are_ subtle. The console tells us that when we return `${greeting}, ${name}`, we're returning a string by wrapping it in `"`; but when we just call `console.log("Hello", "Chuck!")`, we instead see only `Hello, Chuck!` (without quotes), followed by `undefined`.
 
 When we call a function in the browser's console, the browser always tells us what the function returns. Thus, if we return `"Hello, Chuck!"`, the browser tells us, "I'm returning a string, and it looks like this." If we don't return anything from a function, however, the function returns the default value, `undefined` — so the browser says, "Hey, I'm returning undefined."
 
