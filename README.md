@@ -144,7 +144,7 @@ What if we want to say something other than "Hello"? Well, we can move the greet
 
 ``` javascript
 function say(greeting, name) {
-  console.log(greeting, `, ${name}!`)
+  console.log(greeting, `${name}!`)
 }
 ```
 
