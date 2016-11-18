@@ -186,7 +186,8 @@ Now when we call `say("Hello", "Sofia")` we'll see `"Hello, Sofia!"` instead of 
 
 What's happening here? These differences seem _awfully_ subtle. Well, while we're working in the console, they _are_ subtle. The console tells us that when we return `${greeting}, ${name}`, we're returning a string by wrapping it in `"`; but when we just call `console.log("Hello", "Chuck!")`, we instead see only `Hello, Chuck!` (without quotes), followed by `undefined`.
 
-When we call a function in the browser's console, the browser always tells us what the function returns. Thus, if we return `"Hello, Chuck!"`, the browser tells us, "I'm returning a string, and it looks like this." If we don't return anything from a function, however, the function returns the default value, `undefined` — so the browser says, "Hey, I'm returning undefined."
+When we call a function in the browser's console, the browser always tells us what the function returns. Thus, if we return `"Hello, Chuck!"`, the browser tells us, "I'm returning a string, and it looks like this." If we don't return anything from a function, however, the function returns the default value, `undefined` — so the browser says, "Hey, I'm returning undefined."  For example, insert the greeting "Hello" into the console's function say, without including a name variable.
+
 
 There's one last thing you should know about `return`. Let's say we wanted both to `return` and log a string in our `say()` function, we might try writing:
 
