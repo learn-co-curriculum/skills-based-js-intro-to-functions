@@ -192,10 +192,11 @@ There's one last thing you should know about `return`. Let's say we wanted both 
 
 ``` javascript
 function say(greeting, name) {
-  return `${greeting}, ${name}!`
+  return `${greeting}, ${name}!`;
   console.log('I was called!')
 }
 ```
+//If I execute the above code in FireFox I'll get error message "SyntaxError: missing ; before statement" so I added a semicolon //before console.log. After that FireFox reported: "unreachable code after return statement" which matches what you are describing //below. Anything after the return statement can't be executed.
 
 Then we can call it with `say("Howdy", "partner")` — but we only see `"Howdy, partner!"` in the browser console, meaning that we only `return`-ed the value — we never logged "I was called!".
 
@@ -203,10 +204,11 @@ This is because `return` **ends the execution inside the function**, meaning tha
 
 ``` javascript
 function say(greeting, name) {
-  console.log('I was called!')
+  console.log('I was called!');
   return `${greeting}, ${name}!`
 }
 ```
+//Added semicolon before the return statement otherwise I'll get error "SyntaxError: missing ; before statement".
 
 Now the function should work as expected: `say("Howdy", "partner")`.
 
