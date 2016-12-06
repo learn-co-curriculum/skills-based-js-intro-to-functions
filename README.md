@@ -192,7 +192,7 @@ There's one last thing you should know about `return`. Let's say we wanted both 
 
 ``` javascript
 function say(greeting, name) {
-  return `${greeting}, ${name}!`
+  return `${greeting}, ${name}!`;
   console.log('I was called!')
 }
 ```
@@ -203,7 +203,7 @@ This is because `return` **ends the execution inside the function**, meaning tha
 
 ``` javascript
 function say(greeting, name) {
-  console.log('I was called!')
+  console.log('I was called!');
   return `${greeting}, ${name}!`
 }
 ```
