@@ -121,7 +121,7 @@ Pretty cool, right?
 
 ### Saying hello, again
 
-We found it kind of tiresome to say hello to everyone individually above — what if we told you there's a better way?
+We found it kind of tiresome to say hello to everyone individually above — what if we told you there's a better way?  [I suggest Flatiron point out the distinction between backticks and a single quote, here!  This was a bit disorienting, as the example above uses single quotation marks.]
 
 ``` javascript
 function sayHelloTo(name) {
