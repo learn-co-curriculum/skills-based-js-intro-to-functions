@@ -8,7 +8,7 @@
 
 ## JavaScript Function, what's your... um... function?
 
-![junction](http://i.imgur.com/L9e2Pua.gif)
+![junction](https://i.imgur.com/L9e2Pua.gif)
 
 So far, we've been writing directly into our browser's console. This is a great way to test out JavaScript functionality and to get a feel for how it handles different values and operations, but it's not super extensible. What if, for example, we wanted to log `"Hello, world!"` a bunch of times? We could write the statement out repeatedly:
 
@@ -58,7 +58,7 @@ sayHello()
 
 You should see `'Hello!'` printed to your console!
 
-![it's working](http://i.giphy.com/BoBOKNtlR8rTi.gif)
+![it's working](https://i.giphy.com/BoBOKNtlR8rTi.gif)
 
 ### Saying hello
 
