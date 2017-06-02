@@ -102,12 +102,12 @@ While these functions are undoubtedly useful, they're only useful if we only tal
 
 What if there was some way to take what's similar about these functions — the fact that they all call `console.log()` with "Hello," a name, and an exclamation point — and substitute what's different (the name) as we go?
 
-Turns out, we can! We can use something called an _argument_ to pass information to a function.
+Turns out, we can! We can use something called an _parameter_ to pass information to a function.
 
-### Getting into an argument
+### Getting into parameters and arguments
 
 
-**We can pass arguments to a function between its parentheses**, like so (follow along in console!):
+**We can pass parameters to a function between its parentheses**, like so (follow along in console!):
 
 ``` javascript
 function doSomething(thing) {
@@ -136,7 +136,9 @@ sayHelloTo(1) // "Hello, 1!"
 // ^ Note that in the above, JavaScript coerces the number 1 to the string "1"
 ```
 
-That's pretty cool. We use what's called a _parameter_, in this case called "name." **Parameters** or **arguments** are objects (there's that word again!) that get passed to a function to use when it runs. They're essentially local variables that stick around for the life of the function. Note that `name` is only available in the body of the function. If we just type `name` in the console, we'll get an error because it's undefined!
+That's pretty cool. We use what's called a _parameter_, in this case called "name." **Parameters** are objects (there's that word again!) that get passed to a function to use when it runs, note that when we call the function, we pass an **argument** instead. Parameters are essentially local variables that stick around for the life of the function. Note that `name` is only available in the body of the function. If we just type `name` in the console, we'll get an error because it's undefined!
+
+Note: *the **parameter** is what's given in the function declaration, the **argument** is what's passed when calling the function, an instance of a parameter.*
 
 ### Saying something new
 
@@ -158,7 +160,7 @@ say("Julio", "hello")
 
 You should now see "Julio, hello!" in console. What's going on? "Julio" is a name, not a greeting!
 
-You've just illustrated an important point: **what matters with functions is not what the argument is _called_, but its location in the arguments list.**
+You've just illustrated an important point: **what matters with functions is not what the parameter is _called_, but its location in the arguments list.**
 
 ### Return of the Value
 
