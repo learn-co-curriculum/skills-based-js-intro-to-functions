@@ -136,7 +136,10 @@ sayHelloTo(1) // "Hello, 1!"
 // ^ Note that in the above, JavaScript coerces the number 1 to the string "1"
 ```
 
-That's pretty cool. We use what's called a _parameter_, in this case called "firstName." **Parameters** or **arguments** are objects (there's that word again!) that get passed to a function to use when it runs. They're essentially local variables that stick around for the life of the function. Note that `firstName` is only available in the body of the function. If we just type `firstName` in the console, we'll get an error because it's undefined!
+That's pretty cool. We're using what's called a _parameter_, in this case `firstName` in `function sayHelloTo(firstName)`. **Parameters** are placeholders that we put between the parentheses when declaring a function. When we invoke that function, we can pass **arguments** to the invocation (e.g., `'Isabel'` in `sayHelloTo('Isabel')`) that get stored as local, function-level variables that are available anywhere in the function body. Essentially, the arguments are the actual values that we pass to the function, and the parameters are the named references where we store those passed-in values. An argument can be any JavaScript expression — any piece of JavaScript code that evaluates to a value — from something as simple as `5` or `'Avi'` to something as complex as an entire function.
+
+Note that we can only access arguments within the body of the function by referring to the parameter name, such as ``console.log(`Hello, ${firstName}!`)`` in the above code. If we try to call `firstName` outside of our `sayHelloTo()` function in the JavaScript console, we'll see a `ReferenceError` telling us that `firstName` is not defined.
+
 
 ### Saying something new
 
