@@ -50,13 +50,13 @@ function sayHello() {
 }
 ```
 
-Here we have a function called `sayHello`; its body reads `console.log('Hello!')`. When you declare the function, you'll notice that nothing's happened yet. That's because we have to call it! Enter the following in your console:
+Here we have a function called `sayHello`; its body reads `console.log('Hello!')`. When you declare the function, you'll notice that nothing's happened yet. That's because we have to call it! Enter the following in your console (Where):
 
 ```js
 sayHello()
 ```
 
-You should see `'Hello!'` printed to your console!
+You should see `'Hello!'` printed to your console! It did the first time, but not the second and third time I tried. 
 
 ![it's working](https://i.giphy.com/BoBOKNtlR8rTi.gif)
 
@@ -151,7 +151,7 @@ function say(greeting, firstName) {
 }
 ```
 
-After entering the above in console, let's try `say("Goodbye", "Julio")` — we should see "Goodbye, Julio!" in the browser's console.
+After entering the above in console, let's try `say("Goodbye", "Julio")` — we should see "Goodbye, Julio!" in the browser's console. (But I did not see it), and I am not sure why. 
 
 But what if we wanted to switch the order and say something like, "Julio, hello!"? Hm, that sentence still has two parts — let's try it:
 
