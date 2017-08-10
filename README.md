@@ -50,13 +50,13 @@ function sayHello() {
 }
 ```
 
-Here we have a function called `sayHello`; its body reads `console.log('Hello!')`. When you declare the function, you'll notice that nothing's happened yet. That's because we have to call it! Enter the following in your console:
+Here we have a function called `sayHello`; its body reads `console.log('Hello!')`. When you declare the function, you'll notice that nothing's happened yet. That's because we have to call it! Enter the following in your console (Where):
 
 ```js
 sayHello()
 ```
 
-You should see `'Hello!'` printed to your console!
+You should see `'Hello!'` printed to your console! 
 
 ![it's working](https://i.giphy.com/BoBOKNtlR8rTi.gif)
 
